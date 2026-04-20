@@ -30,7 +30,7 @@ Modelling Approach
 
 The reactor is modeled using:
 
-Arrhenius-based kinetics
+(Graaf, Bussche & Froment, Park) kinetics
 Plug flow assumptions
 Heat effects of reaction
 Parametric sensitivity analysis
