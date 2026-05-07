@@ -84,7 +84,7 @@ pip install -r requirements.txt
 ### Run an industrial-scale simulation
 
 ```bash
-python methanol_digital_twin_2.py
+python methanol_digital_twin.py
 ```
 
 The interactive prompt will ask for geometry, operating conditions, and which kinetic model to use. Default values reproduce a Lurgi MRP world-scale plant at 240 °C, 75 bar, GHSV = 10,000 h⁻¹.
