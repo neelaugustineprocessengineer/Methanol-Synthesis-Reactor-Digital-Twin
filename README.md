@@ -218,8 +218,7 @@ Methanol-Synthesis-Reactor-Digital-Twin/
 ├── Methanol_Platform_V.2.html              ← browser-based UI
 ├── docs/
 │   ├── ARCHITECTURE.md                     ← code architecture deep-dive
-│   ├── THEORY.md                           ← kinetics & thermodynamics primer
-│   └── Methanol_Digital_Twin_Technical_Report.docx  ← full PhD-level report
+│   ├── THEORY.md                           ← kinetics & thermodynamics primere
 ├── data/
 │   └── park_2014_validation.csv            ← 114 experimental data points
 └── figures/
