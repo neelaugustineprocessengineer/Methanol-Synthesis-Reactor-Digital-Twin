@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Methanol Synthesis Reactor Digital Twin"
+abstract: >-
+  A research-grade Python implementation of an isothermal/cooled/adiabatic
+  one-dimensional pseudo-homogeneous plug-flow reactor digital twin for
+  industrial multi-tubular methanol synthesis on Cu/ZnO/Al2O3. Includes three
+  published kinetic models (Graaf 1988, Vanden Bussche-Froment 1996, Nestler
+  2020), Peng-Robinson and Soave-Redlich-Kwong fugacity corrections, Ergun
+  pressure drop, Zehner-Schlunder bed transport, and a coupled energy balance
+  with finite tube-to-shell heat transfer. Validated against 114 experimental
+  data points from Park et al. (2014).
+authors:
+  - family-names: Augustine
+    given-names: Neel
+    affiliation: "Process Engineer | Hydrogen & Syngas Technologies"
+type: software
+url: "https://github.com/neelaugustineprocessengineer/Methanol-Synthesis-Reactor-Digital-Twin"
+repository-code: "https://github.com/neelaugustineprocessengineer/Methanol-Synthesis-Reactor-Digital-Twin"
+license: MIT
+keywords:
+  - methanol synthesis
+  - digital twin
+  - reactor modeling
+  - chemical engineering
+  - LHHW kinetics
+  - Cu/ZnO/Al2O3
+  - process simulation
+  - syngas
+  - Power-to-Methanol
+date-released: 2026-04-01
