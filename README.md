@@ -213,9 +213,7 @@ Methanol-Synthesis-Reactor-Digital-Twin/
 ├── LICENSE                                 ← MIT
 ├── CITATION.cff                            ← academic citation
 ├── requirements.txt                        ← pip dependencies
-├── methanol_digital_twin_2.py              ← main reactor simulation engine
-├── Methanol Synthesis Platform.py          ← entry-point platform (legacy)
-├── Methanol_Platform_V.2.html              ← browser-based UI
+├── methanol_digital_twin.py              ← main reactor simulation engine
 ├── docs/
 │   ├── ARCHITECTURE.md                     ← code architecture deep-dive
 │   ├── THEORY.md                           ← kinetics & thermodynamics primere
