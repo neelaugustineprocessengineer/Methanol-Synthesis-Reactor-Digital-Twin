@@ -307,16 +307,16 @@ A `CITATION.cff` file is provided for tools that auto-import GitHub citations.
 
 ## 📜 License
 
-This project is released under the **MIT License** — see [`LICENSE`](LICENSE).
+This project is released under the **MIT License** - see [`LICENSE`](LICENSE).
 
 ---
 
 ## 👤 Author
 
-**Neel Augustine** — Process Engineer | Hydrogen & Syngas Technologies
+**Neel Augustine** - Process Engineer | Hydrogen & Syngas Technologies
 🔗 [GitHub](https://github.com/neelaugustineprocessengineer)
 
-> *"Built to bridge fundamental reaction engineering and real-time digital-twin practice — a clean, transparent, citable reference for industrial methanol-synthesis modelling."*
+> *"Built to bridge fundamental reaction engineering and real-time digital-twin practice - a clean, transparent, citable reference for industrial methanol-synthesis modelling."*
 
 ---
 
