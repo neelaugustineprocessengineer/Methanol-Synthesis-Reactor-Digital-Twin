@@ -2,7 +2,7 @@
 
 # 🏭 Methanol Synthesis Reactor Digital Twin
 
-### *A research-grade simulation platform for industrial Cu/ZnO/Al₂O₃ methanol synthesis reactors*
+### *A simulation platform for industrial Cu/ZnO/Al₂O₃ methanol synthesis reactor*
 
 [![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -20,14 +20,13 @@
 
 ## 📋 Overview
 
-This repository implements a **physically-rigorous, one-dimensional, pseudo-homogeneous plug-flow reactor (PFR) digital twin** for industrial multi-tubular methanol synthesis on Cu/ZnO/Al₂O₃ catalysts of the Lurgi MRP type. The model integrates Langmuir–Hinshelwood–Hougen–Watson (LHHW) kinetics, Peng–Robinson and Soave–Redlich–Kwong fugacity corrections, Ergun-type pressure drop, Zehner–Schlünder pellet-scale transport, and a coupled 1-D energy balance with finite tube-to-shell heat transfer.
+This repository implements a **physically-rigorous, one-dimensional, pseudo-homogeneous plug-flow reactor (PFR) digital twin** for industrial multi-tubular methanol synthesis on Cu/ZnO/Al₂O₃ catalysts of the Lurgi MRP type. The model integrates Langmuir-Hinshelwood-Hougen-Watson (LHHW) kinetics, Peng-Robinson and Soave-Redlich-Kwong fugacity corrections, Ergun-type pressure drop, Zehner-Schlünder pellet-scale transport, and a coupled 1-D energy balance with finite tube-to-shell heat transfer.
 
 The platform is intended for:
 
-* 🎓 **Graduate teaching** — a fully-documented reference implementation of three landmark methanol kinetic models (Graaf 1988, Vanden Bussche–Froment 1996, Nestler 2020)
-* 🔬 **Research** — operating-window scans, kinetics intercomparison, sensitivity analysis, dynamic transient studies
-* ⚙️ **Industrial first-pass design** — reactor sizing, GHSV optimization, hot-spot location prediction
-* 🚀 **Digital-twin prototyping** — building block for real-time monitoring and model-predictive control
+* 🔬 **Research** - operating-window scans, kinetics intercomparison, sensitivity analysis, dynamic transient studies
+* ⚙️ **Industrial first-pass design** - reactor sizing, GHSV optimization, hot-spot location prediction
+* 🚀 **Digital-twin prototyping** - building block for real-time monitoring and model-predictive control
 
 ---
 
@@ -37,18 +36,18 @@ The platform is intended for:
 <tr><td>
 
 **🧪 Three published kinetic models**
-Graaf (1988), VBF (1996), Nestler (2020) — selectable at runtime, all driving toward the same Graaf–Winkelman (2016) thermodynamic equilibrium.
+Graaf (1988), VBF (1996), Nestler (2020) - selectable at runtime, all driving toward the same Graaf-Winkelman (2016) thermodynamic equilibrium.
 
 </td><td>
 
 **🌡️ Three thermal modes**
-Cooled (Lurgi MRP polytropic), isothermal (limit case), adiabatic (worst-case hot-spot study) — with full energy balance.
+Cooled (Lurgi MRP polytropic), isothermal (limit case), adiabatic (worst-case hot-spot study) - with full energy balance.
 
 </td></tr>
 <tr><td>
 
 **💨 Real-gas thermodynamics**
-Peng–Robinson EOS for VBF/Graaf, Soave–Redlich–Kwong for Nestler — fugacity coefficients computed at every solver step.
+Peng-Robinson EOS for VBF/Graaf, Soave–Redlich–Kwong for Nestler - fugacity coefficients computed at every solver step.
 
 </td><td>
 
@@ -59,12 +58,12 @@ Peng–Robinson EOS for VBF/Graaf, Soave–Redlich–Kwong for Nestler — fugac
 <tr><td>
 
 **📊 GHSV operating window scan**
-9-panel comparative figure showing throughput, conversion, STY, and ΔP across 2,000–50,000 h⁻¹.
+9-panel comparative figure showing throughput, conversion, STY, and ΔP across 2,000-50,000 h⁻¹.
 
 </td><td>
 
 **✅ Validated**
-114 experimental data points from Park et al. (2014), spanning 220–340 °C, 50–90 bar, GHSV 9k–45k h⁻¹.
+114 experimental data points from Park et al. (2014), spanning 220-340 °C, 50-90 bar, GHSV 9k-45k h⁻¹.
 
 </td></tr>
 </table>
@@ -122,7 +121,7 @@ twin.print_summary()
 
 ## 📈 Validation
 
-Validated against **114 experimental data points** from Park et al. (2014), tabulated in Nestler's PhD thesis (Appendix A.6, Table A.2). Conditions span: T = 220–340 °C, P = 50–90 bar, GHSV = 9,056–45,280 h⁻¹, feed compositions from CO-rich (CO/CO₂ = 1.7) to pure-CO₂ feeds.
+Validated against **114 experimental data points** from Park et al. (2014), tabulated in Nestler's PhD thesis (Appendix A.6, Table A.2). Conditions span: T = 220-340 °C, P = 50-90 bar, GHSV = 9,056-45,280 h⁻¹, feed compositions from CO-rich (CO/CO₂ = 1.7) to pure-CO₂ feeds.
 
 | Model                          | RMSE *X*<sub>CO</sub> | RMSE *X*<sub>CO₂</sub> | MAE *X*<sub>CO</sub> | Notes                                          |
 | :----------------------------- | :-------------------: | :--------------------: | :------------------: | :--------------------------------------------- |
@@ -171,17 +170,17 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for a detailed walkthrough of
 
 | #   | Reaction                                | ΔH°₂₉₈ (kJ/mol) | Notes                          |
 | :-: | :-------------------------------------- | :-------------: | :----------------------------- |
-| R1  | CO + 2H₂ ⇌ CH₃OH                        |     −90.7       | CO hydrogenation               |
-| R2  | CO₂ + 3H₂ ⇌ CH₃OH + H₂O                 |     −49.5       | CO₂ hydrogenation (main route) |
-| R3  | CO + H₂O ⇌ CO₂ + H₂                     |     −41.2       | Water-gas shift                |
-| R4  | 2CH₃OH ⇌ CH₃OCH₃ + H₂O                  |     −23.4       | DME formation                  |
-| R5  | CO + 3H₂ → CH₄ + H₂O                    |    −206.2       | Methanation (irreversible)     |
-| R6  | 2CO + 4H₂ ⇌ C₂H₅OH + H₂O                |    −253.6       | Ethanol formation              |
-| R7  | 3CO + 6H₂ ⇌ C₃H₇OH + 2H₂O               |    −417.3       | 1-Propanol formation           |
+| R1  | CO + 2H₂ ⇌ CH₃OH                        |     -90.7       | CO hydrogenation               |
+| R2  | CO₂ + 3H₂ ⇌ CH₃OH + H₂O                 |     -49.5       | CO₂ hydrogenation (main route) |
+| R3  | CO + H₂O ⇌ CO₂ + H₂                     |     -41.2       | Water-gas shift                |
+| R4  | 2CH₃OH ⇌ CH₃OCH₃ + H₂O                  |     -23.4       | DME formation                  |
+| R5  | CO + 3H₂ → CH₄ + H₂O                    |    -206.2       | Methanation (irreversible)     |
+| R6  | 2CO + 4H₂ ⇌ C₂H₅OH + H₂O                |    -253.6       | Ethanol formation              |
+| R7  | 3CO + 6H₂ ⇌ C₃H₇OH + 2H₂O               |    -417.3       | 1-Propanol formation           |
 
 R1 = R2 + R3 by Hess's law, so only two of the first three are linearly independent.
 
-### Equilibrium constants (Graaf–Winkelman 2016)
+### Equilibrium constants (Graaf-Winkelman 2016)
 
 $$\log_{10} K_{p,1} = \frac{3066}{T} - 10.592 \quad \text{[bar}^{-2}\text{]}, \qquad \log_{10} K_{p,3} = \frac{2073}{T} - 2.029 \quad \text{[--]}$$
 
@@ -249,10 +248,10 @@ pip install -r requirements.txt
 * [x] PR/SRK fugacity coefficients
 * [x] Cooled / isothermal / adiabatic thermal modes
 * [x] GHSV operating-window scan
-* [x] Validation against Park (2014) — 114 data points
+* [x] Validation against Park (2014) - 114 data points
 * [x] Browser UI (HTML platform)
 * [ ] Two-dimensional axisymmetric model (radial gradients)
-* [ ] Catalyst deactivation kinetics (Twigg–Spencer 2001)
+* [ ] Catalyst deactivation kinetics (Twigg-Spencer 2001)
 * [ ] Real-time data integration via OPC-UA
 * [ ] Techno-economic analysis layer
 * [ ] Extension to low-temperature shift catalysts (same Cu/ZnO platform)
@@ -261,7 +260,7 @@ pip install -r requirements.txt
 
 ## 📖 References
 
-The model rests on a deep literature backbone — these are the primary sources:
+The model rests on a deep literature backbone - these are the primary sources:
 
 **Kinetics**
 * Graaf, G. H.; Stamhuis, E. J.; Beenackers, A. A. C. M. *Chem. Eng. Sci.* **43**, 3185–3195 (1988)
