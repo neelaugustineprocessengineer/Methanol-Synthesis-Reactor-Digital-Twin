@@ -47,7 +47,7 @@ Cooled (Lurgi MRP polytropic), isothermal (limit case), adiabatic (worst-case ho
 <tr><td>
 
 **💨 Real-gas thermodynamics**
-Peng-Robinson EOS for VBF/Graaf, Soave–Redlich–Kwong for Nestler - fugacity coefficients computed at every solver step.
+Peng-Robinson EOS for VBF/Graaf, Soave-Redlich-Kwong for Nestler - fugacity coefficients computed at every solver step.
 
 </td><td>
 
@@ -129,7 +129,7 @@ Validated against **114 experimental data points** from Park et al. (2014), tabu
 | Vanden Bussche & Froment (1996)|         9.9 %         |          9.0 %         |         7.8 %        | Industry-validated baseline                    |
 | **Nestler et al. (2020)**      |       **8.0 %**       |        **8.9 %**       |       **5.7 %**      | Best fit; near experimental noise floor (≈10 %)|
 
-> **Note:** The Park dataset itself contains substantial scatter — duplicate experimental points at identical conditions vary by up to 16 percentage points in *X*<sub>CO</sub>. The 8 % RMSE achieved by the Nestler model is essentially at the **experimental noise floor**.
+> **Note:** The Park dataset itself contains substantial scatter - duplicate experimental points at identical conditions vary by up to 16 percentage points in *X*<sub>CO</sub>. The 8 % RMSE achieved by the Nestler model is essentially at the **experimental noise floor**.
 
 ---
 
