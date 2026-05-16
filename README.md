@@ -263,21 +263,21 @@ pip install -r requirements.txt
 The model rests on a deep literature backbone - these are the primary sources:
 
 **Kinetics**
-* Graaf, G. H.; Stamhuis, E. J.; Beenackers, A. A. C. M. *Chem. Eng. Sci.* **43**, 3185–3195 (1988)
-* Vanden Bussche, K. M.; Froment, G. F. *J. Catal.* **161**, 1–10 (1996)
+* Graaf, G. H.; Stamhuis, E. J.; Beenackers, A. A. C. M. *Chem. Eng. Sci.* **43**, 3185-3195 (1988)
+* Vanden Bussche, K. M.; Froment, G. F. *J. Catal.* **161**, 1-10 (1996)
 * Nestler, F. et al. *Chem. Eng. J.* **394**, 124881 (2020)
-* Park, N.; Park, M.-J.; Lee, Y.-J.; Ha, K.-S.; Jun, K.-W. *Fuel* **118**, 202–213 (2014)
+* Park, N.; Park, M.-J.; Lee, Y.-J.; Ha, K.-S.; Jun, K.-W. *Fuel* **118**, 202-213 (2014)
 
 **Thermodynamics**
-* Graaf, G. H.; Winkelman, J. G. M. *Ind. Eng. Chem. Res.* **55**, 5854–5864 (2016)
-* Peng, D.-Y.; Robinson, D. B. *Ind. Eng. Chem. Fund.* **15**, 59–64 (1976)
-* Soave, G. *Chem. Eng. Sci.* **27**, 1197–1203 (1972)
+* Graaf, G. H.; Winkelman, J. G. M. *Ind. Eng. Chem. Res.* **55**, 5854-5864 (2016)
+* Peng, D.-Y.; Robinson, D. B. *Ind. Eng. Chem. Fund.* **15**, 59-64 (1976)
+* Soave, G. *Chem. Eng. Sci.* **27**, 1197-1203 (1972)
 
 **Reactor & transport**
-* Ergun, S. *Chem. Eng. Prog.* **48**, 89–94 (1952)
-* Lommerts, B. J.; Graaf, G. H.; Beenackers, A. A. C. M. *Chem. Eng. Sci.* **55**, 5589–5598 (2000)
+* Ergun, S. *Chem. Eng. Prog.* **48**, 89-94 (1952)
+* Lommerts, B. J.; Graaf, G. H.; Beenackers, A. A. C. M. *Chem. Eng. Sci.* **55**, 5589-5598 (2000)
 * Slotboom, Y. et al. *Chem. Eng. J.* **389**, 124181 (2020)
-* Bisotti, F. et al. *Chem. Eng. Res. Des.* **178**, 360–376 (2022)
+* Bisotti, F. et al. *Chem. Eng. Res. Des.* **178**, 360-376 (2022)
 
 **Industrial process**
 * Olah, G. A.; Goeppert, A.; Prakash, G. K. S. *Beyond Oil and Gas: The Methanol Economy* (2nd ed., Wiley-VCH, 2009)
